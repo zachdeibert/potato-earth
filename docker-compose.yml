@@ -1,0 +1,13 @@
+version: "2"
+services:
+  transpiler:
+    image: zachdeibert/typescriptdocker
+    volumes:
+    - .:/srv/typescript
+  server:
+    image: node
+    command:
+    - npm start
+    working_dir: /srv
+    volumes:
+    - .:/srv
