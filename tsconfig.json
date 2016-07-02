@@ -12,7 +12,7 @@
         "jspm_packages"
     ],
     "files": [
-        "node_modules/web-game-framework/typings/auto.d.ts",
+        "node_modules/web-game-framework/framework.d.ts",
         "PotatoEarth/Client/Main.ts",
         "PotatoEarth/Server/Main.ts"
     ]

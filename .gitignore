@@ -27,7 +27,7 @@ coverage
 build/Release
 
 # Dependency directories
-node_modules
+node_modules/*
 jspm_packages
 
 # Optional npm cache directory
@@ -38,3 +38,11 @@ jspm_packages
 
 # Authentication secret
 auth.secret
+
+# Typescript
+typings/
+
+# Keep the links for the framework
+!node_modules/web-game-framework
+node_modules/web-game-framework/*
+!node_modules/web-game-framework/site.json

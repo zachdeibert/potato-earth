@@ -9,7 +9,7 @@
     ],
     "main": "node_modules/web-game-framework/electron.js",
     "scripts": {
-        "start": "node node_modules/web-game-framework/server.js"
+        "start": "cd node_modules/web-game-framework && node server.js"
     },
     "repository": {
         "type": "git",
@@ -21,8 +21,9 @@
     },
     "homepage": "https://github.com/zachdeibert/potato-earth#readme",
     "dependencies": {
+        "autodts": "^0.0.6",
         "electron-prebuilt": "^1.2.5",
         "typescript": "^1.8.10",
-        "web-game-framework": "^1.0.0"
+        "web-game-framework": "^1.0.1"
     }
 }
