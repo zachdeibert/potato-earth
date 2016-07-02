@@ -1,0 +1,19 @@
+{
+    "compilerOptions": {
+        "noImplicitAny": true,
+        "removeComments": true,
+        "preserveConstEnums": true,
+        "outFile": "node_modules/web-game-framework/game.js",
+        "sourceMap": true
+    },
+    "exclude": [
+        "node_modules",
+        "bower_components",
+        "jspm_packages"
+    ],
+    "files": [
+        "node_modules/web-game-framework/typings/auto.d.ts",
+        "PotatoEarth/Client/Main.ts",
+        "PotatoEarth/Server/Main.ts"
+    ]
+}

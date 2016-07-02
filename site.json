@@ -1,0 +1,12 @@
+{
+    "title": "Potato Earth 2400",
+    "main": "PotatoEarth.Client.Main",
+    "server": "PotatoEarth.Server.Main",
+    "websocket": "ws://potatoearth.com/",
+    "auth": {
+        "type": "Framework.Auth.GoogleAuth",
+        "clientID": "721889779796-47136rbdqt6a6e30bibui8ge2f7qft7q.apps.googleusercontent.com",
+        "secret": "auth.secret",
+        "domain": "http://potatoearth.com/"
+    }
+}

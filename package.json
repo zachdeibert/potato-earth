@@ -1,0 +1,28 @@
+{
+    "name": "potato-earth",
+    "version": "1.0.0",
+    "description": "The world has gone vegan in order to avoid global warming, and now everything is powered by renewable resources: primarily potatoes. It's the middle of a worldwide war in which you will attack anyone you find.",
+    "contributors": [
+        {
+            "name": "Zach Deibert"
+        }
+    ],
+    "main": "node_modules/web-game-framework/electron.js",
+    "scripts": {
+        "start": "node node_modules/web-game-framework/server.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/zachdeibert/potato-earth.git"
+    },
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/zachdeibert/potato-earth/issues"
+    },
+    "homepage": "https://github.com/zachdeibert/potato-earth#readme",
+    "dependencies": {
+        "electron-prebuilt": "^1.2.5",
+        "typescript": "^1.8.10",
+        "web-game-framework": "^1.0.0"
+    }
+}
