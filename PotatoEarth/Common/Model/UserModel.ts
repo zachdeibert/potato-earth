@@ -1,4 +1,4 @@
-// Main.ts
+// UserModel.ts
 //
 // Copyright (c) 2016 Zach Deibert
 //
@@ -20,19 +20,9 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 
-/// <reference path="../Common/Model/GlobalModel.ts" />
-/// <reference path="../Common/Model/UserModel.ts" />
+namespace PotatoEarth.Common.Model {
+    import Base = Framework.Model.UserModel;
 
-namespace PotatoEarth.Server {
-    import GlobalModel = PotatoEarth.Common.Model.GlobalModel;
-    import ServerModel = Framework.Model.ServerModel;
-    import Server = Framework.Network.Server;
-    import UserModel = PotatoEarth.Common.Model.UserModel;
-
-    export class Main {
-        public static main(server: Server) {
-            let model: ServerModel<GlobalModel, UserModel> = new ServerModel<GlobalModel, UserModel>(GlobalModel, UserModel);
-            server.setModel(model);
-        }
+    export class UserModel extends Base {
     }
 }

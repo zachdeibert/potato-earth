@@ -20,13 +20,21 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 
+/// <reference path="../Common/Model/GlobalModel.ts" />
+/// <reference path="../Common/Model/UserModel.ts" />
+
 namespace PotatoEarth.Client {
     import Client = Framework.Network.Client;
+    import ClientModel = Framework.Model.ClientModel;
     import Frame = Framework.Graphics.Frame;
+    import GlobalModel = PotatoEarth.Common.Model.GlobalModel;
     import User = Framework.Auth.User;
+    import UserModel = PotatoEarth.Common.Model.UserModel;
 
     export class Main {
         public static main(frame: Frame, client: Client, user: User) {
+            let model: ClientModel<GlobalModel, UserModel> = new ClientModel<GlobalModel, UserModel>(GlobalModel, UserModel);
+            client.setModel(model);
         }
     }
 }
